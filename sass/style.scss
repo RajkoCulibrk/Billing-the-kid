@@ -27,7 +27,7 @@ main {
       display: flex;
       list-style: none;
       justify-content: space-around;
-      width: 50%;
+      width: 60%;
 
       a {
         color: white;
@@ -62,6 +62,71 @@ main {
     background-color: rgba(0, 0, 0, 0.568);
     h1 {
       font-size: 4rem;
+    }
+  }
+}
+section {
+  padding: 0 25%;
+}
+.first {
+  display: flex;
+  padding: 0 10%;
+  ul {
+    display: flex;
+    margin: 2rem 0;
+    margin-left: auto;
+
+    a {
+      color: $fontColor;
+      text-decoration: none;
+      padding: 1rem;
+      margin-right: 2rem;
+      border: 1px solid $fontColor;
+      border-radius: 3rem;
+      &:hover {
+        background: $fontColor;
+        color: white;
+      }
+    }
+  }
+}
+.niches {
+  background-color: $sectionBackground;
+  display: flex;
+  flex-direction: column;
+
+  .niches__points {
+    .point {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      &:hover {
+        .point__text {
+          visibility: initial;
+        }
+        img {
+          opacity: 1;
+        }
+      }
+
+      img {
+        width: 100px;
+        border-radius: 100%;
+        opacity: 0.6;
+      }
+    }
+    .point__text {
+      visibility: hidden;
+    }
+    h4 {
+      color: $fontColor;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+    span {
+      color: $accent;
     }
   }
 }

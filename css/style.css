@@ -25,7 +25,7 @@ main header ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  width: 50%;
+  width: 60%;
 }
 main header ul a {
   color: white;
@@ -56,6 +56,67 @@ main .header__greeting {
 }
 main .header__greeting h1 {
   font-size: 4rem;
+}
+
+section {
+  padding: 0 25%;
+}
+
+.first {
+  display: flex;
+  padding: 0 10%;
+}
+.first ul {
+  display: flex;
+  margin: 2rem 0;
+  margin-left: auto;
+}
+.first ul a {
+  color: #797979;
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 2rem;
+  border: 1px solid #797979;
+  border-radius: 3rem;
+}
+.first ul a:hover {
+  background: #797979;
+  color: white;
+}
+
+.niches {
+  background-color: #f3f7f9;
+  display: flex;
+  flex-direction: column;
+}
+.niches .niches__points .point {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.niches .niches__points .point:hover .point__text {
+  visibility: initial;
+}
+.niches .niches__points .point:hover img {
+  opacity: 1;
+}
+.niches .niches__points .point img {
+  width: 100px;
+  border-radius: 100%;
+  opacity: 0.6;
+}
+.niches .niches__points .point__text {
+  visibility: hidden;
+}
+.niches .niches__points h4 {
+  color: #797979;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.niches .niches__points span {
+  color: #f38181;
 }
 
 /*# sourceMappingURL=style.css.map */
