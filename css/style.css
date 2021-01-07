@@ -1,3 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+}
 
+main {
+  height: 100vh;
+  background: url("../slike/intro.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+main header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #374249;
+  align-items: center;
+  height: 4rem;
+}
+main header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+}
+main header ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+main header ul a:hover {
+  text-decoration: underline;
+}
+main header .hamburger {
+  background-color: #f38181;
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main header .hamburger img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: auto;
+}
+main .header__greeting {
+  padding: 2rem;
+  margin-top: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+main .header__greeting h1 {
+  font-size: 4rem;
+}
 
 /*# sourceMappingURL=style.css.map */
