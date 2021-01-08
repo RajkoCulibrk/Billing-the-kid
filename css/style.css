@@ -88,6 +88,9 @@ section {
   background-color: #f3f7f9;
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 60vh;
 }
 .niches .niches__points .point {
   margin-bottom: 2rem;
@@ -168,6 +171,146 @@ section {
 .pricing a:hover {
   background: #797979;
   color: white;
+}
+
+.contact {
+  padding: 2rem 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f7f9;
+}
+.contact input,
+.contact textarea,
+.contact select,
+.contact option,
+.contact h4 {
+  color: black;
+}
+.contact h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.contact input {
+  padding: 0.5rem;
+}
+.contact input[type=email] {
+  margin-bottom: 1rem;
+}
+.contact .contact__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.contact .contact__container form {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex: 0.7;
+  padding: 2rem;
+  background-color: #f38181;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact__container form .input_group {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.contact .contact__container form .input_group input {
+  flex: 0.9;
+}
+
+footer {
+  background-color: #374249;
+  text-align: center;
+  padding: 1rem;
+}
+footer span {
+  color: #f38181;
+}
+
+@media screen and (max-width: 860px) {
+  .contact .contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .contact__container form {
+    align-self: initial;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    background: #374249;
+    height: 60vh;
+  }
+  main header {
+    flex-direction: column-reverse;
+  }
+  main header .hamburger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  main header .hamburger img {
+    margin: initial;
+    width: 50px;
+  }
+  main header ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main header ul li {
+    margin-top: 2rem;
+  }
+  main .header__greeting {
+    padding: 1;
+  }
+  main .header__greeting h1 {
+    font-size: 3rem;
+  }
+
+  .contact iframe {
+    max-width: 300px;
+  }
+
+  .pricing table {
+    display: none;
+  }
+  .pricing a {
+    display: block;
+    margin: auto;
+  }
+
+  .first ul a {
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .niches {
+    padding: 2rem 0.5rem;
+  }
+  .niches .niches__points .point {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .niches .niches__points .point .point__text {
+    visibility: initial;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .niches .niches__points .point:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

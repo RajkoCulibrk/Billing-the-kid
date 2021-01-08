@@ -85,6 +85,9 @@ section {
   background-color: $sectionBackground;
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 60vh;
 
   .niches__points {
     .point {
@@ -162,5 +165,161 @@ section {
     @include link_button;
     margin-top: 2rem;
     display: none;
+  }
+}
+
+.contact {
+  padding: 2rem 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $sectionBackground;
+
+  input,
+  textarea,
+  select,
+  option,
+  h4 {
+    color: black;
+  }
+  h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  input {
+    padding: 0.5rem;
+  }
+  input[type="email"] {
+    margin-bottom: 1rem;
+  }
+
+  .contact__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      flex: 0.7;
+      .input_group {
+        width: 100%;
+        display: flex;
+        margin-bottom: 1rem;
+        input {
+          flex: 0.9;
+        }
+        justify-content: space-between;
+      }
+      padding: 2rem;
+      background-color: $accent;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+footer {
+  background-color: $headFoot;
+  text-align: center;
+  padding: 1rem;
+  span {
+    color: $accent;
+  }
+}
+
+@media screen and(max-width: 860px) {
+  .contact {
+    .contact__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      form {
+        align-self: initial;
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 700px) {
+  main {
+    background: $headFoot;
+    height: 60vh;
+    header {
+      flex-direction: column-reverse;
+      .hamburger {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin: initial;
+          width: 50px;
+        }
+      }
+      ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        li {
+          margin-top: 2rem;
+        }
+      }
+    }
+    .header__greeting {
+      padding: 1;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .contact {
+    iframe {
+      max-width: 300px;
+    }
+  }
+  .pricing {
+    table {
+      display: none;
+    }
+    a {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .first {
+    ul {
+      a {
+        padding: 0.5rem;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .niches {
+    padding: 2rem 0.5rem;
+    .niches__points {
+      .point {
+        flex-direction: column;
+        margin-bottom: 5rem;
+        .point__text {
+          visibility: initial;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+      .point:nth-of-type(2) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 }
