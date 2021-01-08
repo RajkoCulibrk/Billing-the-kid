@@ -119,4 +119,55 @@ section {
   color: #f38181;
 }
 
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.pricing h3 {
+  color: black;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.pricing span {
+  color: #797979;
+  margin: 2rem 0;
+}
+.pricing table {
+  border-collapse: collapse;
+}
+.pricing table .accent {
+  background-color: #f38181;
+  color: white;
+}
+.pricing table .dark {
+  background-color: #374249;
+  color: white;
+  font-weight: bold;
+}
+.pricing td,
+.pricing th {
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 3rem;
+}
+.pricing .invisible {
+  visibility: hidden;
+}
+.pricing a {
+  color: #797979;
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 2rem;
+  border: 1px solid #797979;
+  border-radius: 3rem;
+  margin-top: 2rem;
+  display: none;
+}
+.pricing a:hover {
+  background: #797979;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
